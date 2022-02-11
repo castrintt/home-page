@@ -1,0 +1,74 @@
+@import "color","fontes";
+@font-face {
+    font-family: "starjedi";
+    src: url("/fonts/starjedi/Starjhol.ttf");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+body {
+    font-family: $star-wars;
+    color: rgba(255, 166, 0, 0.747);
+    background-image: url("/img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+   
+    
+    background-color: $color-body;
+    .header__container {
+       padding-bottom: 20px;
+       a {
+        @include fonte {
+            text-decoration: none;
+            font-size: 0.84rem;
+            text-decoration: none;
+            padding-bottom: 30px;
+            margin-top: 10px;
+            border-bottom: 1px solid rgba(255, 166, 0, 0.562);
+        }
+      
+     }
+    }
+    .sobre {
+        border: 1px solid rgba(255, 255, 255, 0.123);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.199);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        &__row--titulo {
+            @include fonte {
+                text-align: center;
+                margin-bottom: 20px;
+                text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.308);
+                
+            }
+        
+        }
+        &__row--texto {
+            @include fonte {
+                font-size: 1.09rem;
+                text-align: justify;
+                font-family: $star-wars;
+                letter-spacing: 0;
+                
+            }
+        }
+       
+        }
+        .projetos {
+            width: 90%;
+           
+            .projetos__titulo {
+                text-align: center;
+                margin: 50px 0;
+            }
+            .card {
+                width: 100% !important;
+                background-color: rgba(255, 255, 255, 0);
+                margin: 10px 0 45px 0;
+                
+            }
+        }
+       
+}

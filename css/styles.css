@@ -1,0 +1,68 @@
+/*------- fonts ------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+@font-face {
+  font-family: "starjedi";
+  src: url("/fonts/starjedi/Starjhol.ttf");
+}
+body {
+  font-family: "starjedi";
+  color: rgba(255, 166, 0, 0.747);
+  background-image: url("/img/fundo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-color: #0D0D0D;
+}
+body .header__container {
+  padding-bottom: 20px;
+}
+body .header__container a {
+  font-family: "starjedi";
+  color: rgba(209, 160, 68, 0.801);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 0.84rem;
+  text-decoration: none;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255, 166, 0, 0.562);
+}
+body .sobre {
+  border: 1px solid rgba(255, 255, 255, 0.123);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.199);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+body .sobre__row--titulo {
+  font-family: "starjedi";
+  color: rgba(209, 160, 68, 0.801);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.308);
+}
+body .sobre__row--texto {
+  font-family: "starjedi";
+  color: rgba(209, 160, 68, 0.801);
+  letter-spacing: 1px;
+  font-size: 1.09rem;
+  text-align: justify;
+  font-family: "starjedi";
+  letter-spacing: 0;
+}
+body .projetos {
+  width: 90%;
+}
+body .projetos .projetos__titulo {
+  text-align: center;
+  margin: 50px 0;
+}
+body .projetos .card {
+  width: 100% !important;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 10px 0 45px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
