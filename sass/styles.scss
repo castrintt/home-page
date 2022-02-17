@@ -1,9 +1,11 @@
-@import "color","fontes";
+@import "color","fontes","animation","media-queries";
 @font-face {
     font-family: "starjedi";
     src: url("/fonts/starjedi/Starjhol.ttf");
   }
   @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:ital@1&display=swap');
+
 
 body {
     font-family: $star-wars;
@@ -13,34 +15,46 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-   
-    
-    background-color: $color-body;
+    @include space;
+    @include queries(968px){
+        background-size: 150% 150%;
+    }
     .header__container {
+      .header__titulo {
+          text-align: center;
+      }
        padding-bottom: 20px;
        a {
         @include fonte {
             text-decoration: none;
-            font-size: 0.84rem;
+            font-size: 0.9rem;
             text-decoration: none;
             padding-bottom: 30px;
             margin-top: 10px;
+            text-align: center;
             border-bottom: 1px solid rgba(255, 166, 0, 0.562);
+            @include queries (768px){
+                font-size: 1.4rem;
+
+            }
+            @include queries (1440px){
+                font-size: 1.6rem;
+            }
         }
       
      }
     }
     .sobre {
-        border: 1px solid rgba(255, 255, 255, 0.123);
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.199);
-        margin-top: 50px;
-        margin-bottom: 50px;
+       border-bottom: 1px solid rgba(255, 166, 0, 0.562);
+       padding-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         &__row--titulo {
             @include fonte {
                 text-align: center;
                 margin-bottom: 20px;
                 text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.308);
+                padding-top:10px ;
                 
             }
         
@@ -49,8 +63,27 @@ body {
             @include fonte {
                 font-size: 1.09rem;
                 text-align: justify;
-                font-family: $star-wars;
+                font-family: $font-texto-padrao;
+                color: white;
                 letter-spacing: 0;
+                overflow: hidden;
+                height: 40vh;
+                .row__texto {
+                    @include animation;
+                    width: 60%;
+                    text-align: justify;
+                    position: relative;
+                    left: 20%;
+                    transform: translate(-50%);
+                    text-transform: uppercase;
+                    font-family: $font-text-sobre;
+                    @include queries (768px){
+                        font-size: 2rem;
+                        text-align: justify;
+                    }
+                    
+                }
+            
                 
             }
         }
@@ -58,16 +91,19 @@ body {
         }
         .projetos {
             width: 90%;
-           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .projetos__titulo {
                 text-align: center;
                 margin: 50px 0;
             }
-            .card {
-                width: 100% !important;
-                background-color: rgba(255, 255, 255, 0);
-                margin: 10px 0 45px 0;
-                
+            .slide {
+             width: 100%;
+             .img__carousel {
+                 backdrop-filter: blur(20px);
+             }
             }
         }
        

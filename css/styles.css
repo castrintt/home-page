@@ -1,5 +1,6 @@
 /*------- fonts ------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:ital@1&display=swap");
 @font-face {
   font-family: "starjedi";
   src: url("/fonts/starjedi/Starjhol.ttf");
@@ -12,28 +13,57 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  background-color: #0D0D0D;
+  animation-name: space;
+  animation-iteration-count: infinite;
+  animation-duration: 130s;
+  animation-direction: alternate;
+}
+@keyframes space {
+  to {
+    background-position: 0 50%;
+  }
+  from {
+    background-position: 100% 50%;
+  }
+}
+@media screen and (min-width: 968px) {
+  body {
+    background-size: 150% 150%;
+  }
 }
 body .header__container {
   padding-bottom: 20px;
+}
+body .header__container .header__titulo {
+  text-align: center;
 }
 body .header__container a {
   font-family: "starjedi";
   color: rgba(209, 160, 68, 0.801);
   letter-spacing: 1px;
   text-decoration: none;
-  font-size: 0.84rem;
+  font-size: 0.9rem;
   text-decoration: none;
   padding-bottom: 30px;
   margin-top: 10px;
+  text-align: center;
   border-bottom: 1px solid rgba(255, 166, 0, 0.562);
 }
+@media screen and (min-width: 768px) {
+  body .header__container a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .header__container a {
+    font-size: 1.6rem;
+  }
+}
 body .sobre {
-  border: 1px solid rgba(255, 255, 255, 0.123);
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.199);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 166, 0, 0.562);
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 body .sobre__row--titulo {
   font-family: "starjedi";
@@ -42,6 +72,7 @@ body .sobre__row--titulo {
   text-align: center;
   margin-bottom: 20px;
   text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.308);
+  padding-top: 10px;
 }
 body .sobre__row--texto {
   font-family: "starjedi";
@@ -49,20 +80,59 @@ body .sobre__row--texto {
   letter-spacing: 1px;
   font-size: 1.09rem;
   text-align: justify;
-  font-family: "starjedi";
+  font-family: "Poller One", "cursive";
+  color: white;
   letter-spacing: 0;
+  overflow: hidden;
+  height: 40vh;
+}
+body .sobre__row--texto .row__texto {
+  animation-name: animacao-jedi;
+  animation-duration: 90s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 60%;
+  text-align: justify;
+  position: relative;
+  left: 20%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+@keyframes animacao-jedi {
+  0% {
+    transform: translateY(85%);
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+@media screen and (min-width: 768px) {
+  body .sobre__row--texto .row__texto {
+    font-size: 2rem;
+    text-align: justify;
+  }
 }
 body .projetos {
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body .projetos .projetos__titulo {
   text-align: center;
   margin: 50px 0;
 }
-body .projetos .card {
-  width: 100% !important;
-  background-color: rgba(255, 255, 255, 0);
-  margin: 10px 0 45px 0;
+body .projetos .slide {
+  width: 100%;
+}
+body .projetos .slide .img__carousel {
+  backdrop-filter: blur(20px);
 }
 
 /*# sourceMappingURL=styles.css.map */

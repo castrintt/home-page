@@ -13,60 +13,47 @@
 </head>
 <body >
     <header class="container-fluid header__container">
-        <div class="row header__row--imagem">
-            <img src="img/apresetancao.png" alt="apresentacao" class="col header__row--apresentacao img-fluid-md">
+        <div class="row header__row--pre">
+          <h1 class="header__titulo">olá,<br> sou igor,<br> web developer</h1>
         </div>
-        <nav class="row header__row--links">
+        <nav class="row header__row--links row-cols-md-12 m-md-5 ">
             <a href="home.html" class="col">home</a>
-            <a href="#" class="col">sobre</a>
-            <a href="#" class="col">projetos</a>
+            <a href="#sobre" class="col">sobre</a>
+            <a href="#projetos" class="col">projetos</a>
             <a href="#" class="col">contato</a>
         </nav>
     </header>
-    <main class="container sobre">
+    <main class="container sobre" id="sobre">
         <section class="row sobre__row--titulo">
             <h1 class="col-12 row__titulo">sobre</h1>
         </section>
         <section class="row sobre__row--texto">
-            <p class="col-12 row__texto">tenho 23 anos e sou apaixonado por técnologia, iniciei meus estudos na área de front-end em 2021, desde então estou decidido a me tornar um programador profissional.</p>
+            <p class="col-12 row__texto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, odit quis? Soluta ipsa voluptatum quidem sit fugit? Recusandae, maxime, in ratione dolores nisi saepe provident, vel placeat mollitia voluptatibus illum?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere sunt nostrum pariatur maxime tempore delectus expedita possimus voluptas ratione vitae esse quos vero molestiae, </p>
         </section>
     </main>
-    <section class="container projetos">
+    <section class="container projetos mb-5" id="projetos">
         <div class="row projetos__titulo">
             <h1 class="col">projetos</h1>
         </div>
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <a target="_blank" href="https://castrintt.github.io/projeto-igor-bootstrap/"><img src="img/udemy.png" class="card-img-top " alt=""></a>
-                <div class="card-body">
-                  <p class="card-text">projeto realizado pela plataforma udemy para o curso de bootstrap</p>
+        <div class="col-md-6">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a target="_blank" href="https://castrintt.github.io/Formulario-seat/formulario.html"><img src="img/form.png" class="d-block w-100 img__carousel" alt="..."></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a target="_blank" href="https://castrintt.github.io/barbearia-uba/index.html"><img src="img/barb.png" class="d-block w-100 img__carousel" alt="..."></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a target="_blank" href="https://castrintt.github.io/pousada-secreta-main/pag-principal.html"><img src="img/pousa.png" class="d-block w-100 img__carousel" alt="..."></a>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
+    </section>
+    <section class="container contato">
+        <div class="contato__titulo">contato</div>
+        <div class="row"></div>
     </section>
 </body>
 </html>

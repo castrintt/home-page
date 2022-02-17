@@ -1,0 +1,39 @@
+@mixin animation {
+    animation-name: animacao-jedi;
+    animation-duration:90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    @keyframes animacao-jedi {
+        0% {
+            transform: translateY(85%);
+           opacity: 1;
+            
+        }
+        95% {
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-200%);
+            
+        }
+    }
+
+}
+
+
+@mixin space {
+    animation-name: space;
+    animation-iteration-count: infinite;
+    animation-duration: 130s;
+    animation-direction: alternate;
+    @content;
+    @keyframes space {
+        to {
+            background-position: 0 50%;
+        }
+        from {
+           background-position: 100% 50%;
+        }
+        
+    }
+}
