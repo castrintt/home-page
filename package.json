@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/castrintt/home-page/issues"
   },
-  "homepage": "https://github.com/castrintt/home-page#readme"
+  "homepage": "https://github.com/castrintt/home-page#readme",
+  "devDependencies": {}
 }
