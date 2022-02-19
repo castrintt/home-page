@@ -93,7 +93,7 @@ body .sobre__row--texto {
 }
 body .sobre__row--texto .row__texto {
   animation-name: animacao-jedi;
-  animation-duration: 70s;
+  animation-duration: 90s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   width: 60%;
@@ -106,7 +106,7 @@ body .sobre__row--texto .row__texto {
 }
 @keyframes animacao-jedi {
   0% {
-    transform: translateY(60%);
+    transform: translateY(50%);
   }
   100% {
     transform: translateY(-200%);

@@ -1,12 +1,12 @@
 @mixin animation {
     animation-name: animacao-jedi;
-    animation-duration:70s;
+    animation-duration:90s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     
     @keyframes animacao-jedi {
         0% {
-            transform: translateY(60%) ;
+            transform: translateY(50%) ;
            
             
         }
