@@ -15,7 +15,7 @@ body {
   background-position: center center;
   animation-name: space;
   animation-iteration-count: infinite;
-  animation-duration: 130s;
+  animation-duration: 110s;
   animation-direction: alternate;
 }
 @keyframes space {
@@ -88,7 +88,7 @@ body .sobre__row--texto {
 }
 body .sobre__row--texto .row__texto {
   animation-name: animacao-jedi;
-  animation-duration: 90s;
+  animation-duration: 70s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   width: 60%;
@@ -101,14 +101,11 @@ body .sobre__row--texto .row__texto {
 }
 @keyframes animacao-jedi {
   0% {
-    transform: translateY(85%);
-    opacity: 1;
-  }
-  95% {
-    opacity: 0;
+    transform: translateY(60%);
   }
   100% {
     transform: translateY(-200%);
+    opacity: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -133,6 +130,145 @@ body .projetos .slide {
 }
 body .projetos .slide .img__carousel {
   backdrop-filter: blur(20px);
+}
+body .contato {
+  text-align: center;
+}
+body .contato .contato__titulo {
+  font-size: 1.8rem;
+  border-top: 1px solid rgba(255, 166, 0, 0.562);
+  padding-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__titulo {
+    font-size: 2rem;
+  }
+}
+body .contato .contato__row .contato__row--texto {
+  position: relative;
+  top: -320px;
+  left: 40%;
+  transform: translate(-50%);
+  width: 200px;
+  animation-name: yoda;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+@keyframes yoda {
+  from {
+    transform: rotatex(360deg) rotateY(40deg) rotateZ(-25deg) scale(1) translateX(0) translateY(20%);
+  }
+  to {
+    transform: rotatex(-360deg) rotateY(-40deg) rotateZ(25deg) scale(1.3) translateX(-20%) translateY(-20%);
+  }
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__row .contato__row--texto {
+    top: -550px;
+    left: 50%;
+    font-size: 1.5rem;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .contato .contato__row .contato__row--texto {
+    top: -700px;
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .contato .contato__row .contato__row--texto {
+    top: 350px;
+    left: 0;
+    animation-name: yoda2;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 400px;
+  }
+  @keyframes yoda2 {
+    to {
+      transform: rotatex(180deg) rotateZ(180deg) scale(1.3);
+    }
+  }
+}
+body .contato .contato__row .contato__row--img {
+  max-width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  body .contato .contato__row .contato__row--img {
+    height: 100%;
+    width: 50vw;
+  }
+}
+body .contato .contato__info {
+  border-bottom: 1px solid rgba(255, 166, 0, 0.562);
+}
+body .contato .contato__info .contato__icone {
+  text-align: center;
+  font-size: 2rem;
+}
+body .contato .contato__info .contato__icone a {
+  text-decoration: none;
+  color: rgba(255, 166, 0, 0.562);
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__info .contato__icone a {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__info .bi-linkedin {
+    font-size: 3rem;
+  }
+}
+body .contato .contato__info .bi-github {
+  font-size: 2.3rem;
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__info .bi-github {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__info .email__text--div {
+    font-size: 1.5rem;
+  }
+}
+body .contato .contato__info .email__text--email {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  body .contato .contato__info .email__text--email {
+    font-size: 2rem;
+  }
+}
+body .footer__container .footer__titulo {
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  body .footer__container .footer__titulo {
+    font-size: 1.3rem;
+  }
+}
+body .footer__container .footer__texto {
+  text-align: center;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  body .footer__container .footer__texto {
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,7 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.1.3",
     "sas": "^3.0.4",
-    "sass": "^1.49.7"
+    "sass": "^1.49.8"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,5 @@
   "bugs": {
     "url": "https://github.com/castrintt/home-page/issues"
   },
-  "homepage": "https://github.com/castrintt/home-page#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/castrintt/home-page#readme"
 }
