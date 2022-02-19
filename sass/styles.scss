@@ -33,6 +33,9 @@ body {
             margin-top: 10px;
             text-align: center;
             border-bottom: 1px solid $color-text;
+            @include queries (340px){
+                font-size: .7rem;
+            }
             @include queries (768px){
                 font-size: 1.4rem;
 
